@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>CSE 21 lab 6</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1347.23">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 5.0px 0.0px; font: 12.0px Verdana; color: #441faa; -webkit-text-stroke: #441faa}
+    p.p2 {margin: 0.0px 0.0px 5.0px 0.0px; font: 12.0px Helvetica; color: #441faa; -webkit-text-stroke: #441faa}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #000000; -webkit-text-stroke: #000000}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Verdana; color: #441faa; -webkit-text-stroke: #441faa}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Verdana; color: #000000; -webkit-text-stroke: #000000}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #4e9072; -webkit-text-stroke: #4e9072}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #3933ff; -webkit-text-stroke: #3933ff}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #000000; -webkit-text-stroke: #000000; min-height: 11.0px}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Verdana; color: #441faa; -webkit-text-stroke: #441faa; min-height: 15.0px}
+    p.p11 {margin: 0.0px 0.0px 0.0px 72.0px; font: 10.0px 'Courier New'; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none; color: #00cf90; -webkit-text-stroke: 0px #00cf90}
+    span.s3 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s4 {font-kerning: none; color: #931a68; -webkit-text-stroke: 0px #931a68}
+    span.s5 {font-kerning: none; color: #0326cc; -webkit-text-stroke: 0px #0326cc}
+    span.s6 {font-kerning: none; color: #3933ff; -webkit-text-stroke: 0px #3933ff}
+    span.s7 {font: 10.0px 'Courier New'; font-kerning: none; color: #0326cc; -webkit-text-stroke: 0px #0326cc}
+    span.s8 {font: 10.0px 'Courier New'; font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s9 {font: 10.0px 'Courier New'; font-kerning: none; color: #3933ff; -webkit-text-stroke: 0px #3933ff}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">Copy over RunShop.java and Cheese.java from the previous lab.</span></p>
+<p class="p2"><span class="s1"><b>Sample Output:<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p3"><span class="s1">We sell 0 kinds of Cheese</span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s1">Sub Total: $0.0</span></p>
+<p class="p3"><span class="s1">-Discount: $0.0</span></p>
+<p class="p3"><span class="s1">Total<span class="Apple-converted-space">    </span>: $0.0</span></p>
+<p class="p3"><span class="s1">We sell 1 kinds of Cheese</span></p>
+<p class="p3"><span class="s1">Dalaran Sharp: $1.25 per pound</span></p>
+<p class="p3"><span class="s1">Enter the amount of Dalaran Sharp : 1</span></p>
+<p class="p3"><span class="s1">Display the itemized list? (1 for yes) </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">1 lbs of Dalaran Sharp @ 1.25 = $1.25</span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s1">Sub Total: $1.25</span></p>
+<p class="p3"><span class="s1">-Discount: $0.0</span></p>
+<p class="p3"><span class="s1">Total<span class="Apple-converted-space">    </span>: $1.25</span></p>
+<p class="p3"><span class="s1">We sell 2 kinds of Cheese</span></p>
+<p class="p3"><span class="s1">Dalaran Sharp: $1.25 per pound</span></p>
+<p class="p3"><span class="s1">Stormwind Brie: $10.0 per pound</span></p>
+<p class="p3"><span class="s1">Enter the amount of Dalaran Sharp : 1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Stormwind Brie : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Display the itemized list? (1 for yes) </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">1 lbs of Dalaran Sharp @ 1.25 = $1.25</span></p>
+<p class="p3"><span class="s1">1 lbs of Stormwind Brie @ 10.0 = $10.0</span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s1">Sub Total: $11.25</span></p>
+<p class="p3"><span class="s1">-Discount: $0.0</span></p>
+<p class="p3"><span class="s1">Total<span class="Apple-converted-space">    </span>: $11.25</span></p>
+<p class="p3"><span class="s1">We sell 3 kinds of Cheese</span></p>
+<p class="p3"><span class="s1">Dalaran Sharp: $1.25 per pound</span></p>
+<p class="p3"><span class="s1">Stormwind Brie: $10.0 per pound</span></p>
+<p class="p3"><span class="s1">Alterac Swiss: $40.0 per pound</span></p>
+<p class="p3"><span class="s1">Enter the amount of Dalaran Sharp : 1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Stormwind Brie : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Alterac Swiss : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Display the itemized list? (1 for yes) </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">1 lbs of Dalaran Sharp @ 1.25 = $1.25</span></p>
+<p class="p3"><span class="s1">1 lbs of Stormwind Brie @ 10.0 = $10.0</span></p>
+<p class="p3"><span class="s1">1 lbs of Alterac Swiss @ 40.0 = $40.0</span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s1">Sub Total: $51.25</span></p>
+<p class="p3"><span class="s1">-Discount: $10.0</span></p>
+<p class="p3"><span class="s1">Total<span class="Apple-converted-space">    </span>: $41.25</span></p>
+<p class="p3"><span class="s1">We sell 4 kinds of Cheese</span></p>
+<p class="p3"><span class="s1">Dalaran Sharp: $1.25 per pound</span></p>
+<p class="p3"><span class="s1">Stormwind Brie: $10.0 per pound</span></p>
+<p class="p3"><span class="s1">Alterac Swiss: $40.0 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type D: $9.15 per pound</span></p>
+<p class="p3"><span class="s1">Enter the amount of Dalaran Sharp : 1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Stormwind Brie : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Alterac Swiss : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type D : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Display the itemized list? (1 for yes) </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">1 lbs of Dalaran Sharp @ 1.25 = $1.25</span></p>
+<p class="p3"><span class="s1">1 lbs of Stormwind Brie @ 10.0 = $10.0</span></p>
+<p class="p3"><span class="s1">1 lbs of Alterac Swiss @ 40.0 = $40.0</span></p>
+<p class="p3"><span class="s1">1 lbs of Cheese Type D @ 9.15 = $9.15</span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s1">Sub Total: $60.4</span></p>
+<p class="p3"><span class="s1">-Discount: $10.0</span></p>
+<p class="p3"><span class="s1">Total<span class="Apple-converted-space">    </span>: $50.4</span></p>
+<p class="p3"><span class="s1">We sell 4 kinds of Cheese</span></p>
+<p class="p3"><span class="s1">Dalaran Sharp: $1.25 per pound</span></p>
+<p class="p3"><span class="s1">Stormwind Brie: $10.0 per pound</span></p>
+<p class="p3"><span class="s1">Alterac Swiss: $40.0 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type D: $9.15 per pound</span></p>
+<p class="p3"><span class="s1">Enter the amount of Dalaran Sharp : 0</span></p>
+<p class="p3"><span class="s1">Enter the amount of Stormwind Brie : </span><span class="s2">0</span></p>
+<p class="p3"><span class="s1">Enter the amount of Alterac Swiss : </span><span class="s2">0</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type D : </span><span class="s2">0</span></p>
+<p class="p3"><span class="s1">Display the itemized list? (1 for yes) </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s1">Sub Total: $0.0</span></p>
+<p class="p3"><span class="s1">-Discount: $0.0</span></p>
+<p class="p3"><span class="s1">Total<span class="Apple-converted-space">    </span>: $0.0</span></p>
+<p class="p3"><span class="s1">We sell 10 kinds of Cheese</span></p>
+<p class="p3"><span class="s1">Dalaran Sharp: $1.25 per pound</span></p>
+<p class="p3"><span class="s1">Stormwind Brie: $10.0 per pound</span></p>
+<p class="p3"><span class="s1">Alterac Swiss: $40.0 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type D: $9.15 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type E: $2.5 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type F: $8.74 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type G: $9.88 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type H: $2.91 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type I: $6.66 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type J: $0.36 per pound</span></p>
+<p class="p3"><span class="s1">Enter the amount of Dalaran Sharp : 1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Stormwind Brie : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Alterac Swiss : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type D : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type E : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type F : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type G : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type H : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type I : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type J : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Display the itemized list? (1 for yes) </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">1 lbs of Dalaran Sharp @ 1.25 = $1.25</span></p>
+<p class="p3"><span class="s1">1 lbs of Stormwind Brie @ 10.0 = $10.0</span></p>
+<p class="p3"><span class="s1">1 lbs of Alterac Swiss @ 40.0 = $40.0</span></p>
+<p class="p3"><span class="s1">1 lbs of Cheese Type D @ 9.15 = $9.15</span></p>
+<p class="p3"><span class="s1">1 lbs of Cheese Type E @ 2.5 = $2.5</span></p>
+<p class="p3"><span class="s1">1 lbs of Cheese Type F @ 8.74 = $8.74</span></p>
+<p class="p3"><span class="s1">1 lbs of Cheese Type G @ 9.88 = $9.88</span></p>
+<p class="p3"><span class="s1">1 lbs of Cheese Type H @ 2.91 = $2.91</span></p>
+<p class="p3"><span class="s1">1 lbs of Cheese Type I @ 6.66 = $6.66</span></p>
+<p class="p3"><span class="s1">1 lbs of Cheese Type J @ 0.36 = $0.36</span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s1">Sub Total: $91.44999999999999</span></p>
+<p class="p3"><span class="s1">-Discount: $10.0</span></p>
+<p class="p3"><span class="s1">Total<span class="Apple-converted-space">    </span>: $81.44999999999999</span></p>
+<p class="p3"><span class="s1">We sell 10 kinds of Cheese</span></p>
+<p class="p3"><span class="s1">Dalaran Sharp: $1.25 per pound</span></p>
+<p class="p3"><span class="s1">Stormwind Brie: $10.0 per pound</span></p>
+<p class="p3"><span class="s1">Alterac Swiss: $40.0 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type D: $9.15 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type E: $2.5 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type F: $8.74 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type G: $9.88 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type H: $2.91 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type I: $6.66 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type J: $0.36 per pound</span></p>
+<p class="p3"><span class="s1">Enter the amount of Dalaran Sharp : 1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Stormwind Brie : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Alterac Swiss : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type D : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type E : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type F : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type G : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type H : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type I : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type J : </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">Display the itemized list? (1 for yes) </span><span class="s2">0</span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s1">Sub Total: $91.44999999999999</span></p>
+<p class="p3"><span class="s1">-Discount: $10.0</span></p>
+<p class="p3"><span class="s1">Total<span class="Apple-converted-space">    </span>: $81.44999999999999</span></p>
+<p class="p3"><span class="s1">We sell 10 kinds of Cheese</span></p>
+<p class="p3"><span class="s1">Dalaran Sharp: $1.25 per pound</span></p>
+<p class="p3"><span class="s1">Stormwind Brie: $10.0 per pound</span></p>
+<p class="p3"><span class="s1">Alterac Swiss: $40.0 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type D: $9.15 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type E: $2.5 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type F: $8.74 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type G: $9.88 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type H: $2.91 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type I: $6.66 per pound</span></p>
+<p class="p3"><span class="s1">Cheese Type J: $0.36 per pound</span></p>
+<p class="p3"><span class="s1">Enter the amount of Dalaran Sharp : 1</span></p>
+<p class="p3"><span class="s1">Enter the amount of Stormwind Brie : </span><span class="s2">0</span></p>
+<p class="p3"><span class="s1">Enter the amount of Alterac Swiss : </span><span class="s2">2</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type D : </span><span class="s2">0</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type E : </span><span class="s2">3</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type F : </span><span class="s2">0</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type G : </span><span class="s2">4</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type H : </span><span class="s2">0</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type I : </span><span class="s2">5</span></p>
+<p class="p3"><span class="s1">Enter the amount of Cheese Type J : </span><span class="s2">0</span></p>
+<p class="p3"><span class="s1">Display the itemized list? (1 for yes) </span><span class="s2">1</span></p>
+<p class="p3"><span class="s1">1 lbs of Dalaran Sharp @ 1.25 = $1.25</span></p>
+<p class="p3"><span class="s1">2 lbs of Alterac Swiss @ 40.0 = $80.0</span></p>
+<p class="p3"><span class="s1">3 lbs of Cheese Type E @ 2.5 = $7.5</span></p>
+<p class="p3"><span class="s1">4 lbs of Cheese Type G @ 9.88 = $39.52</span></p>
+<p class="p3"><span class="s1">5 lbs of Cheese Type I @ 6.66 = $33.3</span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s1">Sub Total: $161.57</span></p>
+<p class="p3"><span class="s1">-Discount: $25.0</span></p>
+<p class="p3"><span class="s1">Total<span class="Apple-converted-space">    </span>: $136.57</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><b>(Exercise) Modify – RunShop.java (version 2)</b></span></p>
+<p class="p5"><span class="s1">In the original RunShop.java (from previous lab), we are creating an instance of Shop Class named <i>shop</i>.<span class="Apple-converted-space">  </span>Then we call the method run() on this variable <i>shop</i>.<span class="Apple-converted-space">  </span>Now we no longer have an Object or Class called Shop but instead we will be using ShopArr. Import RunShop.java from the previous lab to do this step.</span></p>
+<p class="p1"><span class="s3">Q1.</span><span class="s1"><span class="Apple-converted-space">  </span>What are the minimal changes required to instantiate ShopArr() and invoke run() on it? <span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">Make the change in RunShop.java file which will allow you to run the newest cheese shop. (same as answer to Q1)</span></p>
+<p class="p6"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><b>(Exercise) Fill-in – ShopArr.java</b></span></p>
+<p class="p5"><span class="s1">Everywhere you see comment to “Fill in Code” is where you need to add code to make this program behave correctly.<span class="Apple-converted-space">  </span>If it says “Fix Code” you need to change existing code.<span class="Apple-converted-space">  </span>In most places a sample is provided to help you get started.<span class="Apple-converted-space">  </span>The program currently runs but the behavior is obviously incorrect.</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1">Here is a simpler version of intro() as reference</span></p>
+<p class="p3"><span class="s4"><b>public</b></span><span class="s1"> </span><span class="s4"><b>static</b></span><span class="s1"> </span><span class="s4"><b>void</b></span><span class="s1"> intro(String[] names, </span><span class="s4"><b>double</b></span><span class="s1">[]prices, </span><span class="s4"><b>int</b></span><span class="s1">[] amounts) {</span></p>
+<p class="p7"><span class="s3"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s1">// Special 3 Cheeses</span></p>
+<p class="p3"><span class="s4"><b><span class="Apple-tab-span">	</span>if</b></span><span class="s1"> (names.</span><span class="s5">length</span><span class="s1"> &gt; 0) {</span></p>
+<p class="p8"><span class="s3"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>names[0] = </span><span class="s1">"Dalaran Sharp"</span><span class="s3">;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>prices[0] = 1.25;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span></span><span class="s4"><b>if</b></span><span class="s1"> (names.</span><span class="s5">length</span><span class="s1"> &gt; 1) {</span></p>
+<p class="p8"><span class="s3"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>names[1] = </span><span class="s1">"Stormwind Brie"</span><span class="s3">;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>prices[1] = 10.00;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span></span><span class="s4"><b>if</b></span><span class="s1"> (names.</span><span class="s5">length</span><span class="s1"> &gt; 2) {</span></p>
+<p class="p8"><span class="s3"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>names[2] = </span><span class="s1">"Alterac Swiss"</span><span class="s3">;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>prices[2] = 40.00;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p9"><span class="s1"><span class="Apple-tab-span">	</span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span>Random ranGen = </span><span class="s4"><b>new</b></span><span class="s1"> Random(100);</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span>System.</span><span class="s5"><i>out</i></span><span class="s1">.println(</span><span class="s6">"We sell "</span><span class="s1"> + names.</span><span class="s5">length</span><span class="s1"> + </span><span class="s6">" kinds of cheese"</span><span class="s1">);</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span></span><span class="s4"><b>if</b></span><span class="s1"> (names.</span><span class="s5">length</span><span class="s1"> &gt; 0)</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.</span><span class="s5"><i>out</i></span><span class="s1">.println(names[0] + </span><span class="s6">": $"</span><span class="s1"> + prices[0] + </span><span class="s6">" per pound"</span><span class="s1">);</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span></span><span class="s4"><b>if</b></span><span class="s1"> (names.</span><span class="s5">length</span><span class="s1"> &gt; 1)</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.</span><span class="s5"><i>out</i></span><span class="s1">.println(names[1] + </span><span class="s6">": $"</span><span class="s1"> + prices[1] + </span><span class="s6">" per pound"</span><span class="s1">);</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span></span><span class="s4"><b>if</b></span><span class="s1"> (names.</span><span class="s5">length</span><span class="s1"> &gt; 2)</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.</span><span class="s5"><i>out</i></span><span class="s1">.println(names[2] + </span><span class="s6">": $"</span><span class="s1"> + prices[2] + </span><span class="s6">" per pound"</span><span class="s1">);</span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span></span><span class="s4"><b>for</b></span><span class="s1"> (</span><span class="s4"><b>int</b></span><span class="s1"> i = 3; i &lt; names.</span><span class="s5">length</span><span class="s1">; i++) {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>names[i] = </span><span class="s6">"Cheese Type "</span><span class="s1"> + (</span><span class="s4"><b>char</b></span><span class="s1">)(</span><span class="s6">'A'</span><span class="s1">+i);</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>prices[i] = ranGen.nextInt(1000)/100.0;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>amounts[i] = 0;</span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.</span><span class="s5"><i>out</i></span><span class="s1">.println(names[i] + </span><span class="s6">": $"</span><span class="s1"> + prices[i] + </span><span class="s6">" per pound"</span><span class="s1">);</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p10"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">We now split it into two functions in this lab: init() and intro().<span class="Apple-converted-space">  </span>The reason is we want to repeat intro() if need be but creating objects using init() has to be done only once.<span class="Apple-converted-space">  </span>So all the println statements will be moved to intro().<span class="Apple-converted-space">  </span>Now take a look at ShopArr.java and init() method in it.<span class="Apple-converted-space">  </span>We see the code is very similar but the variables have been changed.<span class="Apple-converted-space">  </span>The very first thing we do is create the array of Cheese pointers since we are given the argument <i>max</i>. <span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s3"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s1">// Create max number of Cheese pointers</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s5">cheese</span><span class="s1"> = </span><span class="s4"><b>new</b></span><span class="s1"> Cheese[max];<span class="Apple-converted-space"> </span></span></p>
+<p class="p9"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+<p class="p5"><span class="s1">Then you will see the code to handle Sharp cheese:</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s4"><b>if</b></span><span class="s1"> (max &gt; 0) {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s5">cheese</span><span class="s1">[0] = </span><span class="s4"><b>new</b></span><span class="s1"> Cheese();</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s5">cheese</span><span class="s1">[0].setName(</span><span class="s6">"Dalaran Sharp"</span><span class="s1">);</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s5">cheese</span><span class="s1">[0].setPrice(1.25);</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1">Instead of <i>names.length</i>, now we use <i>max</i> in this code.<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s3">Q2.</span><span class="s1"><span class="Apple-converted-space">  </span>We can also use an &lt;something&gt;.length instead of <i>max</i>. What is the valid &lt;something&gt; to use in ShopArr.java?</span></p>
+<p class="p5"><span class="s1">Instead of using three different arrays (names, prices and amounts), we now only have an array of cheeses.<span class="Apple-converted-space">  </span>So the code is changed to </span><span class="s7">cheese</span><span class="s8">[0] </span><span class="s1">which points to the first Cheese object in the array.<span class="Apple-converted-space">  </span>If we want to change the name then we use a mutator setName which exists inside Cheese object so we must access it using the “.” operator.<span class="Apple-converted-space">  </span>We instantiate Sharp using default constructor with 0 arguments and invoke two mutators after.<span class="Apple-converted-space">  </span>Brie is instantiated with 1 argument constructor and invokes only one mutator after.<span class="Apple-converted-space">  </span>Finally Swiss uses 2 argument constructors so no mutator calls are necessary after.<span class="Apple-converted-space">  </span>Note that we will use the corresponding accessor method calls in other parts of the code to get to the value of the variables set by mutators.</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s3">Q3.</span><span class="s1"><span class="Apple-converted-space">  </span>How can we tell which instantiation (new Cheese) corresponds to which constructor definition inside Cheese Class?</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s3">Q4.</span><span class="s1"><span class="Apple-converted-space">  </span>How can we tell a mutator method call?</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s3">Q5.</span><span class="s1"><span class="Apple-converted-space">  </span>What would be the result if we added this line after Swiss is created: <span class="Apple-tab-span">	</span></span><span class="s8"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s7">cheese</span><span class="s8">[2].setName(</span><span class="s9">"Wrong Name"</span><span class="s8">);</span><span class="s1">?</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1">Now we need to implement the for-loop into ShopArr.java.<span class="Apple-converted-space">  </span>The original loop is as follows :<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s4"><b><span class="Apple-tab-span">	</span>for</b></span><span class="s1"> (</span><span class="s4"><b>int</b></span><span class="s1"> i = 3; i &lt; names.</span><span class="s5">length</span><span class="s1">; i++) {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>names[i] = </span><span class="s6">"Cheese Type "</span><span class="s1"> + (</span><span class="s4"><b>char</b></span><span class="s1">)(</span><span class="s6">'A'</span><span class="s1">+i);</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>prices[i] = ranGen.nextInt(1000)/100.0;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1">Figure out the transformations needed from 3 arrays to cheese array as shown by the code already inside init().<span class="Apple-converted-space">  </span>You can assume the amount is already set to 0 for each cheese so doesn’t need to zero it.</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s3">Q6.</span><span class="s1"><span class="Apple-converted-space">  </span>Why is the init() method both private and void?<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1">Two Constructors:<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span></span><span class="s4"><b>public</b></span><span class="s1"> ShopArr() {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>init(10);</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p9"><span class="s1"><span class="Apple-tab-span">	</span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span></span><span class="s4"><b>public</b></span><span class="s1"> ShopArr(</span><span class="s4"><b>int</b></span><span class="s1"> max) {</span></p>
+<p class="p7"><span class="s3"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s1">// Fill-in Code</span></p>
+<p class="p3"><span class="s1"><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1">We implemented the basic version of ShopArr constructor which just invokes init method with a fixed number, 10.<span class="Apple-converted-space">  </span>Now write the 1 argument constructor which will invoke init using the <i>max</i> parameter instead.</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s3">Q7.</span><span class="s1"><span class="Apple-converted-space">  </span>What are the distinguishing features of constructor methods? (ie. How do we tell them apart from other methods?)</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1">Now implement intro(Scanner), calcSubTotal() and itemizedList() so it works for an array of cheese pointer. <span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s3">Q8.</span><span class="s1"><span class="Apple-converted-space">  </span>How can we figure out the number of required iterations for each loop?<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s3">Q9.</span><span class="s1"><span class="Apple-converted-space">  </span>Should we pass in Cheese array pointer (cheese[]) as arguments into calcSubTotal or itemizedList? (Why or why not)<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><b>(Exercise) Modify – RunShop.java (version 3)</b></span></p>
+<p class="p5"><span class="s1">Now notice that there are two <b>constructors</b> for ShopArr available and version 2 of RunShop is only calling the default constructor with no arguments.<span class="Apple-converted-space">  </span>So it will always create 10 cheeses to sell.<span class="Apple-converted-space">  </span>We will need to make use of the <b>second constructor</b> which takes in an argument max which sets the amount of cheeses to sell. <span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1">Modify RunShop so it asks the following question to the user and then pass the number user enters into ShopArr constructor so the program now starts like the following:</span></p>
+<p class="p11"><span class="s1">Enter the number of Cheese :</span><span class="s2">12</span></p>
+<p class="p11"><span class="s1">We sell 12 types of Cheese</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1">Everything should work as it did before, now you can just change the number of cheese from 10 to any amount you want (including 0 but not negatives).</span></p>
+<p class="p6"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s3">Q10.</span><span class="s1"><span class="Apple-converted-space">  </span>What value will get printed out from RunShop for “Ran with Cheese Total”? (fixed number or a formula)</span></p>
+</body>
+</html>

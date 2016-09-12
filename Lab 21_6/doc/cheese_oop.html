@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>CSE 21 lab 6</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1347.13">
+  <style type="text/css">
+    p.p1 {margin: 5.0px 0.0px 5.0px 0.0px; font: 24.0px Verdana}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica; color: #441faa; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Verdana; color: #441faa}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Verdana; color: #441faa; min-height: 15.0px}
+    p.p5 {margin: 5.0px 0.0px 5.0px 0.0px; font: 18.0px Verdana}
+    p.p6 {margin: 5.0px 0.0px 5.0px 0.0px; font: 12.0px Verdana; color: #441faa}
+    p.p7 {margin: 5.0px 0.0px 5.0px 0.0px; font: 12.0px Helvetica; color: #441faa; min-height: 14.0px}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #441faa}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; min-height: 11.0px}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'}
+    p.p12 {margin: 0.0px 0.0px 5.0px 0.0px; font: 10.0px 'Courier New'}
+    p.p13 {margin: 12.0px 0.0px 3.0px 0.0px; font: 18.0px Verdana}
+    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #441faa}
+    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #441faa; min-height: 11.0px}
+    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #931a68; min-height: 11.0px}
+    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #931a68}
+    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #4e9072}
+    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #0326cc}
+    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Verdana}
+    p.p21 {margin: 12.0px 0.0px 3.0px 0.0px; font: 18.0px Verdana; color: #441faa}
+    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Verdana; min-height: 15.0px}
+    p.p23 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #3933ff}
+    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px Helvetica}
+    p.p26 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p27 {margin: 5.0px 0.0px 5.0px 0.0px; font: 18.0px Helvetica}
+    p.p28 {margin: 0.0px 0.0px 0.0px 36.0px; font: 12.0px Verdana; color: #441faa; min-height: 15.0px}
+    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Verdana; color: #441faa}
+    li.li6 {margin: 5.0px 0.0px 5.0px 0.0px; font: 12.0px Verdana; color: #441faa}
+    li.li8 {margin: 5.0px 0.0px 5.0px 0.0px; font: 12.0px Helvetica; color: #441faa}
+    li.li9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #441faa}
+    li.li25 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Verdana; color: #441faa}
+    span.s1 {font: 18.0px Helvetica; color: #000000}
+    span.s2 {font: 12.0px Helvetica}
+    span.s3 {font: 12.0px Symbol}
+    span.s4 {font: 12.0px 'Courier New'}
+    span.s5 {color: #00cf90}
+    span.s6 {font: 18.0px Helvetica}
+    span.s7 {color: #931a68}
+    span.s8 {color: #000000}
+    span.s9 {font: 10.0px 'Courier New'; color: #931a68}
+    span.s10 {font: 10.0px 'Courier New'}
+    span.s11 {color: #441faa}
+    span.s12 {color: #0326cc}
+    span.s13 {color: #3933ff}
+    span.s14 {color: #4e9072}
+    span.s15 {text-decoration: underline ; color: #4e9072}
+    span.s16 {color: #a64943}
+    span.s17 {color: #002f73}
+    span.s18 {font: 10.0px 'Courier New'; color: #0326cc}
+    span.s19 {color: #275d90}
+    span.s20 {font: 10.0px Verdana; color: #441faa}
+    span.s21 {font: 10.0px Verdana; color: #0326cc}
+    span.s22 {text-decoration: underline}
+    span.s23 {font: 10.0px Verdana}
+    span.s24 {font: 10.0px Verdana; color: #931a68}
+    span.s25 {font: 12.0px Verdana}
+    span.Apple-tab-span {white-space:pre}
+    ol.ol1 {list-style-type: decimal}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<p class="p3">We start from the simpler version of the shop that only sells three fixed type of cheese.<span class="Apple-converted-space">  </span>When we’re doing OOP, there are two different steps we need to for each object or Class.<span class="Apple-converted-space">  </span>First is to <b>define</b> the Class along with the behavior expected from it.<span class="Apple-converted-space">  </span>Second is to <b>instantiate</b> an object of that type.<span class="Apple-converted-space">  </span>Usually we can only manipulate an instantiated object of a class.</p>
+<p class="p4"><br></p>
+<p class="p3">So the first thing (Object) that we need is a shop.<span class="Apple-converted-space">  </span>So we will <b>define</b> a Shop class, which will behave as the following:</p>
+<ul class="ul1">
+  <li class="li8"><span class="s3"></span>List all the cheese types available and the prices</li>
+  <li class="li8"><span class="s3"></span>Asks the user how many pounds of each type of cheese to purchase</li>
+  <li class="li8"><span class="s3"></span>Calculate Sub Total (price*amount of each cheese added together)</li>
+  <li class="li8"><span class="s3"></span>Discount of Sub Total</li>
+  <ul class="ul1">
+    <li class="li8"><span class="s4"></span>for a $10 discount if their purchase is $50 or over<span class="Apple-converted-space"> </span></li>
+    <li class="li8"><span class="s4"></span>an additional $15 discount ($25 total) if $100 or over</li>
+    <li class="li8"><span class="s4"></span>Ask the user if they would like to see a list of what they purchased</li>
+    <li class="li8"><span class="s4"></span>If yes, a list comes up showing how much of each type of cheese they bought and the cost of each cheese</li>
+    <li class="li8"><span class="s4"></span>Display only the cheese they actually bought</li>
+    <li class="li8"><span class="s4"></span>If no then no itemized information is displayed</li>
+    <li class="li8"><span class="s4"></span>Display Sub Total, Discount and Total Price</li>
+  </ul>
+</ul>
+<p class="p9"><b>Sample Output:</b></p>
+<p class="p10"><br></p>
+<p class="p11">We sell 3 kinds of Cheese</p>
+<p class="p11">Dalaran Sharp: $1.25 per pound</p>
+<p class="p11">Stormwind Brie: $10.00 per pound</p>
+<p class="p11">Alterac Swiss: $40.00 per pound</p>
+<p class="p11">Enter the amount of Sharp: 1</p>
+<p class="p11">Enter the amount of Brie: <span class="s5">1</span></p>
+<p class="p11">Enter the amount of Swiss: <span class="s5">1</span></p>
+<p class="p11">Display the itemized list? (1 for yes) <span class="s5">1</span></p>
+<p class="p11">1 lbs of Sharp @ $ = $1.25</p>
+<p class="p11">1 lbs of Brie @ $10.00 = $10.0</p>
+<p class="p11">1 lbs of Swiss @ $40.00 = $40.0</p>
+<p class="p11">Sub Total: $51.25</p>
+<p class="p11">-Discount: $10.0</p>
+<p class="p11">Total<span class="Apple-converted-space">    </span>: $41.25</p>
+<p class="p11">We sell 3 kinds of Cheese</p>
+<p class="p11">Dalaran Sharp: $1.25 per pound</p>
+<p class="p11">Stormwind Brie: $10.00 per pound</p>
+<p class="p11">Alterac Swiss: $40.00 per pound</p>
+<p class="p11">Enter the amount of Sharp: 1</p>
+<p class="p11">Enter the amount of Brie: <span class="s5">2</span></p>
+<p class="p11">Enter the amount of Swiss: <span class="s5">3</span></p>
+<p class="p11">Display the itemized list? (1 for yes) <span class="s5">1</span></p>
+<p class="p11">1 lbs of Sharp @ $1.25 = $1.25</p>
+<p class="p11">2 lbs of Brie @ $10.00 = $20.0</p>
+<p class="p11">3 lbs of Swiss @ $40.00 = $120.0</p>
+<p class="p11">Sub Total: $141.25</p>
+<p class="p11">-Discount: $25.0</p>
+<p class="p11">Total<span class="Apple-converted-space">    </span>: $116.25</p>
+<p class="p10"><br></p>
+<p class="p11">We sell 3 kinds of Cheese</p>
+<p class="p11">Dalaran Sharp: $1.25 per pound</p>
+<p class="p11">Stormwind Brie: $10.00 per pound</p>
+<p class="p11">Alterac Swiss: $40.00 per pound</p>
+<p class="p11">Enter the amount of Sharp: 1</p>
+<p class="p11">Enter the amount of Brie: <span class="s5">0</span></p>
+<p class="p11">Enter the amount of Swiss: <span class="s5">0</span></p>
+<p class="p11">Display the itemized list? (1 for yes) <span class="s5">1</span></p>
+<p class="p11">1 lbs of Sharp @ $1.25 = $1.25</p>
+<p class="p11">Sub Total: $1.25</p>
+<p class="p11">-Discount: $0.0</p>
+<p class="p11">Total<span class="Apple-converted-space">    </span>: $1.25</p>
+<p class="p11">We sell 3 kinds of Cheese</p>
+<p class="p11">Dalaran Sharp: $1.25 per pound</p>
+<p class="p11">Stormwind Brie: $10.00 per pound</p>
+<p class="p11">Alterac Swiss: $40.00 per pound</p>
+<p class="p11">Enter the amount of Sharp: 0</p>
+<p class="p11">Enter the amount of Brie: <span class="s5">1</span></p>
+<p class="p11">Enter the amount of Swiss: <span class="s5">0</span></p>
+<p class="p11">Display the itemized list? (1 for yes) <span class="s5">1</span></p>
+<p class="p11">1 lbs of Brie @ $10.00 = $10.0</p>
+<p class="p11">Sub Total: $10.0</p>
+<p class="p11">-Discount: $0.0</p>
+<p class="p11">Total<span class="Apple-converted-space">    </span>: $10.0</p>
+<p class="p10"><br></p>
+<p class="p11">We sell 3 kinds of Cheese</p>
+<p class="p11">Dalaran Sharp: $1.25 per pound</p>
+<p class="p11">Stormwind Brie: $10.00 per pound</p>
+<p class="p11">Alterac Swiss: $40.00 per pound</p>
+<p class="p11">Enter the amount of Sharp: 1</p>
+<p class="p11">Enter the amount of Brie: <span class="s5">1</span></p>
+<p class="p11">Enter the amount of Swiss: <span class="s5">1</span></p>
+<p class="p11">Display the itemized list? (1 for yes) <span class="s5">0</span></p>
+<p class="p11">Sub Total: $51.25</p>
+<p class="p11">-Discount: $10.0</p>
+<p class="p11">Total<span class="Apple-converted-space">    </span>: $41.25</p>
+<p class="p10"><br></p>
+<p class="p10"><br></p>
+<p class="p11">We sell 3 kinds of Cheese</p>
+<p class="p11">Dalaran Sharp: $1.25 per pound</p>
+<p class="p11">Stormwind Brie: $10.00 per pound</p>
+<p class="p11">Alterac Swiss: $40.00 per pound</p>
+<p class="p11">Enter the amount of Sharp: 0</p>
+<p class="p11">Enter the amount of Brie: <span class="s5">0</span></p>
+<p class="p11">Enter the amount of Swiss: <span class="s5">0</span></p>
+<p class="p11">Display the itemized list? (1 for yes) <span class="s5">1</span></p>
+<p class="p11">Sub Total: $0.0</p>
+<p class="p11">-Discount: $0.0</p>
+<p class="p12">Total<span class="Apple-converted-space">    </span>: $0.0<span class="s6"><b><span class="Apple-converted-space"> </span></b></span></p>
+<p class="p3"><span class="Apple-converted-space">  </span>Shop class will need to have different cheese types and that’s where the Cheese class comes in.<span class="Apple-converted-space">  </span>Shop will create (<b>instantiate</b>) objects of cheese to sell to the user.</p>
+<p class="p4"><br></p>
+<p class="p3">We need to <b>define</b> the Cheese class for the above Shop class to use and manipulate.<span class="Apple-converted-space">  </span>Each cheese has the same basic behavior and state so we only need to define it once.<span class="Apple-converted-space">  </span>A cheese has a name, a price and an amount the user wants to buy.<span class="Apple-converted-space">  </span>These are naturally modeled by variables declared inside the Cheese class.<span class="Apple-converted-space">  </span>Then we provide methods as the primary way to manipulate these variables by other objects namely Shop in this case.</p>
+<p class="p4"><br></p>
+<p class="p3">Finally we need something with <i>main</i> to executable the whole program and that’s where RunShop Class comes in.<span class="Apple-converted-space">  </span>So it creates a shop object inside and call shop.run() to start our cheese shop.</p>
+<p class="p13">Constructors:</p>
+<p class="p3">Each Class needs to contain at least one type of constructor (method with the same name as the class) so an object or an instance of the class can be created.<span class="Apple-converted-space">  </span>Everything we have done before is <i>static</i> and you may notice a lack of any constructors.<span class="Apple-converted-space">  </span>RunShop for example also does not have one as Java provides one as default.<span class="Apple-converted-space">  </span>However when we need a more sophisticated behavior then we start having the need to have specialized constructors.<span class="Apple-converted-space">  </span>
+We have talked briefly about <b>overloading </b>but this will be the first time we will utilize it in our labs.<span class="Apple-converted-space">  </span>Cheese class will have three different ways of creating an instance.<span class="Apple-converted-space">  </span>The difference lies in the parameters each constructor expects and each is unique among the three.<span class="Apple-converted-space">  </span>So therefore java can figure out which one needs to be called.<span class="Apple-converted-space">  </span>First Cheese constructor takes no argument so it just initializes variables.<span class="Apple-converted-space">  </span>Second constructor has a name of the cheese as input as it should use that instead of initializing to empty string.<span class="Apple-converted-space">  </span>Third constructor is the most complete with the price of the cheese along with the name given as inputs.</p>
+<p class="p4"><br></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="s7"><b>public</b></span> Cheese()<span class="Apple-converted-space"> </span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="s7"><b>public</b></span> Cheese(String name)</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="s7"><b>public</b></span> Cheese(String name, <span class="s7"><b>double</b></span> price)</p>
+<p class="p15"><br></p>
+<p class="p6"><span class="s8">Q1.</span><span class="Apple-converted-space">  </span>How can you tell a method is a constructor? <span class="Apple-converted-space"> </span></p>
+<p class="p6"><span class="s8">Q2.</span><span class="Apple-converted-space">  </span>Would <span class="s9"><b>public void</b></span><span class="s10"> cheese()</span> be considered a constructor?</p>
+<p class="p13">Accessors:</p>
+<p class="p3">Each cheese type requires three variables: name, price and amount.<span class="Apple-converted-space">  </span>If the shop or any other object wants to know the value of these variables then they have to use accessor methods.<span class="Apple-converted-space">  </span>As this is the only way to get access, three accessors must be implemented by Cheese.<span class="Apple-converted-space">  </span>Mostly they contain one <i>return</i> statement to give the value of the corresponding variable to the caller.</p>
+<p class="p15"><br></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="s7"><b>public</b></span> String getName()</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="s7"><b>public</b></span> <span class="s7"><b>double</b></span> getPrice()</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="s7"><b>public</b></span> <span class="s7"><b>int</b></span> getAmount()</p>
+<p class="p15"><br></p>
+<p class="p3"><span class="s8">Q3.</span><span class="Apple-converted-space">  </span>Would it make sense to have <span class="s9"><b>private </b></span>OR<span class="s9"><b> void </b></span>accessor method?</p>
+<p class="p13">Mutators:</p>
+<p class="p3">Each of the variables will also need to be set or modified and that is where mutators come in.<span class="Apple-converted-space">  </span>Cheese is a simple class so there is a corresponding mutator method to the accessor method as you can see below:</p>
+<p class="p15"><br></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="s7"><b>public</b></span> <span class="s7"><b>void</b></span> setName(String newName)<span class="Apple-converted-space"> </span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="s7"><b>public</b></span> <span class="s7"><b>void</b></span> setPrice(<span class="s7"><b>double</b></span> newPrice)</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="s7"><b>public</b></span> <span class="s7"><b>void</b></span> setAmount(<span class="s7"><b>int</b></span> newAmount)</p>
+<p class="p15"><br></p>
+<p class="p3"><span class="s8">Q4.</span><span class="Apple-converted-space">  </span>Would <span class="s9"><b>public void</b></span><span class="s10"> setName()</span> be a good mutator declaration?</p>
+<p class="p13">Cheese Class:</p>
+<p class="p3">Let us look at the simplified version of Cheese class implementation:<span class="Apple-converted-space"> </span></p>
+<p class="p16"><b></b><br></p>
+<p class="p17"><b>public</b><span class="s11"> </span><b>class</b><span class="s11"> Cheese {</span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="s7"><b>private</b></span> String <span class="s12">name</span>;</p>
+<p class="p17"><span class="s11"><span class="Apple-tab-span">	</span></span><b>private</b><span class="s11"> </span><b>double</b><span class="s11"> </span><span class="s12">price</span><span class="s11">;</span></p>
+<p class="p17"><span class="s11"><span class="Apple-tab-span">	</span></span><b>private</b><span class="s11"> </span><b>int</b><span class="s11"> </span><span class="s12">amount</span><span class="s11">;</span></p>
+<p class="p15"><br></p>
+<p class="p17"><span class="s11"><span class="Apple-tab-span">	</span></span><b>public</b><span class="s11"> </span><b>static</b><span class="s11"> </span><b>int</b><span class="s11"> </span><span class="s12"><i>numCheese</i></span><span class="s11"> = 0;</span></p>
+<p class="p15"><span class="Apple-tab-span">	</span></p>
+<p class="p18"><span class="s11"><span class="Apple-tab-span">	</span></span><span class="s7"><b>public</b></span><span class="s11"> Cheese() { </span>// initialization<span class="Apple-converted-space"> </span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s12">name</span> = <span class="s13">""</span>;</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s12">price</span> = 0;</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s12">amount</span> = 0;</p>
+<p class="p19"><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><i>numCheese</i><span class="s11">++;</span></p>
+<p class="p14"><span class="Apple-tab-span">	</span>}</p>
+<p class="p10"><br></p>
+<p class="p18"><span class="s11"><span class="Apple-tab-span">	</span></span><span class="s7"><b>public</b></span><span class="s11"> Cheese(String name) { </span>// Constructor with name input</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>this</b></span>.<span class="s12">name</span> = name;</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s12">price</span> = 0;</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s12">amount</span> = 0;</p>
+<p class="p19"><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><i>numCheese</i><span class="s11">++;</span></p>
+<p class="p14"><span class="Apple-tab-span">	</span>}</p>
+<p class="p15"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="s7"><b>public</b></span> String getName() { <span class="s14">// </span><span class="s15">Accessor</span></p>
+<p class="p17"><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><b>return</b><span class="s11"> </span><span class="s12">name</span><span class="s11">;</span></p>
+<p class="p14"><span class="Apple-tab-span">	</span>}</p>
+<p class="p15"><span class="Apple-tab-span">	</span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="s7"><b>public</b></span> <span class="s7"><b>void</b></span> setName(String newName) { <span class="s14">// Mutator<span class="Apple-converted-space"> </span></span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s12">name</span> = newName;</p>
+<p class="p14"><span class="Apple-tab-span">	</span>}</p>
+<p class="p14">}</p>
+<p class="p10"><br></p>
+<p class="p3">First we have declared three variables <i>name</i>, <i>price</i> and <i>amount</i> with their appropriate types as <i>instance variables</i>.<span class="Apple-converted-space">  </span>Instance variables are unique to each instance of the class object.<span class="Apple-converted-space">  </span>In addition they are all declared as <i>private</i> so only Cheese can access their values; otherwise other objects can access the variables directly without going through the accessor methods.<span class="Apple-converted-space">  </span>We have a public variable <i>numCheese</i> as a <i>class variable</i> to count how many cheese instances have been created.<span class="Apple-converted-space">  </span>Class variables are shared by all the objects of that class definition.</p>
+<p class="p6"><span class="s8">Q5.</span><span class="Apple-converted-space">  </span>How can you tell the difference between instance and class variables?</p>
+<p class="p20"><b>Initialization</b></p>
+<p class="p3">It is very important to have a base constructor which just makes all our variables to a default value.<span class="Apple-converted-space">  </span>In this case, we set <i>name</i> to an empty string, <i>price</i> to 0 and <i>amount</i> to 0.<span class="Apple-converted-space">  </span>We increment the current count of cheese in each constructor so we can keep track of the total number of cheese objects created.</p>
+<p class="p4"><br></p>
+<p class="p20"><b>Variable Resolution</b></p>
+<p class="p3">Second constructor has <i>name</i> as input so it does not need to be initialized to empty string but instead to the value passed in.<span class="Apple-converted-space">  </span>However, you may notice that we have two variables called <i>name</i> that this method knows about.<span class="Apple-converted-space">  </span>First is the one declared in the class and second is the input parameter to the method.<span class="Apple-converted-space">  </span>This is similar situation to <b>overloading</b> where we need to provide a way for Java to differentiate between the two.<span class="Apple-converted-space">  </span>So we introduce a way of addressing oneself with <span class="s16">this</span><span class="s17">.<span class="Apple-converted-space">  </span></span>Remember everything is an object now so we can say use the object’s variable and in this case the object is oneself. <span class="Apple-converted-space">  </span>Thus we have the following line to appropriately resolve both names and do the correct thing:</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>this</b></span>.<span class="s12">name</span> = name;</p>
+<p class="p3">Noticed we did not need to use this in the first constructor for all three variables.<span class="Apple-converted-space">  </span>We also did not add it to price and amount in the second constructor.<span class="Apple-converted-space">  </span>It is equally valid to write:</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>this</b></span>.<span class="s12">name</span> = name;</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>this</b></span>.<span class="s12">price</span> = 0;</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>this</b></span>.<span class="s12">amount</span> = 0;</p>
+<p class="p3">You may do so if you wish in order never be confused about the actual variable being referred to by the code.<span class="Apple-converted-space">  </span>I provided both ways of addressing so you know about each and the situations they should be used.<span class="Apple-converted-space">  </span>You will write the third constructor code based on the two examples given.</p>
+<p class="p6"><span class="s8">Q6.</span><span class="Apple-converted-space">  </span>Can we write <span class="s18">name</span><span class="s10"> = name;</span> and what would it mean?</p>
+<p class="p20"><b>Get and Set</b></p>
+<p class="p3">getName basically return <i>name </i>and setName makes <i>name</i> be the value of <i>newName</i>.<span class="Apple-converted-space">  </span>These two basic methods need to exist and perform the same function for every class variable.<span class="Apple-converted-space">  </span>You will need to implement this method pairing for the other two variables.</p>
+<p class="p21">Shop Class:</p>
+<p class="p3">We will step through the code for Shop to explain things that are of interest.<span class="Apple-converted-space">  </span>We provided code for you that is unchanged from Lab 4, namely discount and printTotal methods.<span class="Apple-converted-space">  </span>We created a new method called printFree that is similar to when the shop gives everything for free.<span class="Apple-converted-space">  </span>Let us begin with the constructor code for Shop which takes no parameters. <span class="Apple-converted-space"> </span></p>
+<p class="p22"><br></p>
+<p class="p19"><span class="s11"><span class="Apple-tab-span">	</span>Cheese </span>Sharp<span class="s11">, </span>Brie<span class="s11">, </span>Swiss<span class="s11">;</span></p>
+<p class="p15"><br></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="s7"><b>public</b></span> Shop() {</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s12">Sharp</span> = <span class="s7"><b>new</b></span> Cheese();</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s12">Sharp</span>.setName(<span class="s13">"Sharp"</span>);</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s12">Sharp</span>.setPrice(1.25);</p>
+<p class="p10"><br></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s12">Brie</span> = <span class="s7"><b>new</b></span> Cheese(<span class="s13">"Brie"</span>);</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s12">Brie</span>.setPrice(10.00);</p>
+<p class="p10"><br></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s12">Swiss</span> = <span class="s7"><b>new</b></span> Cheese(<span class="s13">"Swiss"</span>, 40.00);</p>
+<p class="p3"><span class="s10"><span class="Apple-tab-span">	</span>}</span><span class="s8"> <span class="Apple-converted-space"> </span></span></p>
+<p class="p20">You can see it basically creates 3 instances of cheese using three different constructors.<span class="Apple-converted-space">  </span>The class contains three Cheese instance variables so the member methods can access them freely without having to pass it as parameters.<span class="Apple-converted-space">  </span><span class="s19">Sharp</span> is calling the empty parameter constructor of Cheese and call 2 accessors to make the values correct.<span class="Apple-converted-space">  </span><span class="s19">Brie</span> will call constructor with name input parameter and only needs to set price.<span class="Apple-converted-space">  </span><span class="s19">Swiss</span> does not need to set everything since both values are passed in as parameters to the constructor.<span class="Apple-converted-space">  </span>So after this we have successfully created all three cheeses that shop is going to sell.</p>
+<p class="p6"><span class="s8">Q7.</span><span class="Apple-converted-space">  </span>How can you tell which version of the constructor is being called?</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="s7"><b>private</b></span> <span class="s7"><b>void</b></span> intro(Scanner input) {</p>
+<p class="p23"><span class="s8"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.</span><span class="s12"><i>out</i></span><span class="s8">.println(</span>"We sell 3 types of Cheese"<span class="s8">);</span></p>
+<p class="p11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.<span class="s12"><i>out</i></span>.println(<span class="s12">Sharp</span>.getName() + <span class="s13">": $"</span> + <span class="s12">Sharp</span>.getPrice() + <span class="s13">" per pound"</span>);</p>
+<p class="p11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.<span class="s12"><i>out</i></span>.println(<span class="s12">Brie</span>.getName() + <span class="s13">": $"</span> + <span class="s12">Brie</span>.getPrice() + <span class="s13">" per pound"</span>);</p>
+<p class="p11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.<span class="s12"><i>out</i></span>.println(<span class="s12">Swiss</span>.getName() + <span class="s13">": $"</span> + <span class="s12">Swiss</span>.getPrice() + <span class="s13">" per pound"</span>);</p>
+<p class="p10"><br></p>
+<p class="p11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.<span class="s12"><i>out</i></span>.print(<span class="s13">"Enter amount of "</span> + <span class="s12">Sharp</span>.getName() + <span class="s13">" : "</span>);</p>
+<p class="p11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s12">Sharp</span>.setAmount(input.nextInt());</p>
+<p class="p14"><span class="Apple-tab-span">	</span>}</p>
+<p class="p22"><br></p>
+<p class="p6"><span class="s8">Q8.</span><span class="Apple-converted-space">  </span>What does the . operator do for objects?</p>
+<p class="p20">Intro needs to ask for all three cheese amounts so you will have to add code for Brie and Swiss.<span class="Apple-converted-space">  </span>Intro now takes in a Scanner type just so you can see these things can be passed in as parameter.<span class="Apple-converted-space">  </span>This avoids the need to create new object every time intro is called.<span class="Apple-converted-space">  </span>You know that <span class="s20">input.nextInt() </span>will return an int so we pass that returned value directly as parameter to setAmount without having to use a temporary variable to store it first.<span class="Apple-converted-space"> </span></p>
+<p class="p15"><br></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="s7"><b>private</b></span> <span class="s7"><b>double</b></span> calcSubTotal() {</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>double</b></span> amount = 0;</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>amount += <span class="s12">Sharp</span>.getAmount() * <span class="s12">Sharp</span>.getPrice();</p>
+<p class="p10"><br></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>return</b></span> amount;</p>
+<p class="p14"><span class="Apple-tab-span">	</span>}</p>
+<p class="p22"><br></p>
+<p class="p6"><span class="s8">Q9.</span><span class="Apple-converted-space">  </span>Can you use a loop to implement calcSubTotal?</p>
+<p class="p20">SubTotal does not need any parameters since it knows about Cheese variables.<span class="Apple-converted-space">  </span>It can just call each cheese’s amount and the price to multiply them in order to add to the sub total.<span class="Apple-converted-space">  </span>It makes our lives simple that each Cheese simply knows all the information about itself so we can just use accessor methods .<span class="Apple-converted-space">  </span>You can just add in the rest of the logic so the subTotal is returning the correct value.<span class="Apple-converted-space"> </span></p>
+<p class="p22"><br></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="s7"><b>private</b></span> <span class="s7"><b>void</b></span> itemizedList(){</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>int</b></span> amt;</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.<span class="s12"><i>out</i></span>.println();</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>if</b></span> ((amt = <span class="s12">Sharp</span>.getAmount()) &gt; 0)<span class="Apple-converted-space"> </span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.<span class="s12"><i>out</i></span>.println(amt + <span class="s13">" lbs of Dalaran Sharp<span class="Apple-converted-space">  </span>@$1.25<span class="Apple-converted-space">  </span>= "</span> + (amt * <span class="s12">Sharp</span>.getPrice()));</p>
+<p class="p14"><span class="Apple-tab-span">	</span>}</p>
+<p class="p22"><br></p>	
+<p class="p20">We want to use temporary variable <i>amt</i> to store the result of getAmount so we can avoid calling the method multiple times.<span class="Apple-converted-space">  </span>By using the assignment <span class="s20">amt = </span><span class="s21">Sharp</span><span class="s20">.getAmount()</span>we can first put the value returned into <i>amt</i>.<span class="Apple-converted-space">  </span>Then that value is compared against 0 to see if it’s greater.<span class="Apple-converted-space">  </span>If it is then we print out the amount of the purchase and cost.<span class="Apple-converted-space">  </span>This is a small programming trick because method calls are potentially slow.<span class="Apple-converted-space">  </span>You can complete the rest of the code to print out the other cheese purchased in similar fashion.</p>
+<p class="p22"><br></p>
+<p class="p20">Lastly, we have run() which contains the guts of the program:</p>
+<p class="p15"><br></p>
+<p class="p17"><span class="s11"><span class="Apple-tab-span">	</span></span><b>public</b><span class="s11"> </span><b>void</b><span class="s11"> run() {</span></p>
+<p class="p10"><br></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>Scanner input = <span class="s7"><b>new</b></span> Scanner(System.<span class="s12"><i>in</i></span>);</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>intro(input);</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>double</b></span> sub = subTotal();</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>double</b></span> disAmt = discount(sub);</p>
+<p class="p10"><br></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.<span class="s12"><i>out</i></span>.println();</p>
+<p class="p23"><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.</span><span class="s12"><i>out</i></span><span class="s11">.print(</span>"Do you want to see the itemized list? (1 for yes): "<span class="s11">);</span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>int</b></span> list = input.nextInt();</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>if</b></span> (list == 1)</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>itemizedList();<span class="Apple-tab-span">	</span></p>
+<p class="p10"><br></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>int</b></span> free = (<span class="s7"><b>new</b></span> Random()).nextInt(100);</p>
+<p class="p18"><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>//System.out.println("Random <span class="s22">num</span> is "+ free);</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>if</b></span> (free != 0)</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>printTotal(sub, disAmt);</p>
+<p class="p17"><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><b>else</b><span class="s11"> {</span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>printFree();</p>
+<p class="p17"><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><b>return</b><span class="s11"> ;</span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
+<p class="p15"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.<span class="s12"><i>out</i></span>.println();</p>
+<p class="p23"><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.</span><span class="s12"><i>out</i></span><span class="s11">.print(</span>"Do you wish to redo your whole order? (1 for yes): "<span class="s11">);</span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>int</b></span> redo = input.nextInt();</p>
+<p class="p10"><br></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.<span class="s12"><i>out</i></span>.println();</p>
+<p class="p10"><br></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>if</b></span> (redo == 1)</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>run();</p>
+<p class="p17"><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><b>else</b></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>System.<span class="s12"><i>out</i></span>.println(<span class="s13">"Thanks for coming!"</span>);</p>
+<p class="p14"><span class="Apple-tab-span">	</span>}</p>
+<p class="p14">}</p>
+<p class="p6"><span class="s8">Q10.</span><span class="Apple-converted-space">  </span>Can you tell when and where we do the recursion in run()?<span class="Apple-converted-space"> </span></p>
+<p class="p3">First thing we do is create a Scanner object <i>input</i> and promptly used it in the call to intro(input).<span class="Apple-converted-space">  </span>After we are done with gathering the amount of cheese the user like to purchase then we do two method calls.<span class="Apple-converted-space">  </span>First we call subTotal() and put the result in variable <i>sub</i>.<span class="Apple-converted-space">  </span>Then we use <i>sub</i> in the call to getDiscount and put the return value into <i>disAmt</i>.<span class="Apple-converted-space">  </span>We need to ask the user if they would like to see an itemized list and if the input is 1 then call printList() otherwise skip to the next step.<span class="Apple-converted-space">  </span>One more trick used is the following line:</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>int</b></span> free = (<span class="s7"><b>new</b></span> Random()).nextInt(100);</p>
+<p class="p3">We want to use a Random class to get an integer 0-99.<span class="Apple-converted-space">  </span>However it is only going to be used once so instead of storing to a variable first we are just going to use it.<span class="Apple-converted-space">  </span>By using extra set of parentheses we can tell java to use the object returned and access a method.<span class="Apple-converted-space">  </span><span class="s23">(<b>new</b> Random()) </span>represents the new object and <span class="s23">nextInt(100)</span> is the method call with input 100.<span class="Apple-converted-space">   </span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>if</b></span> (free != 0)</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>printTotal(sub, disAmt);</p>
+<p class="p17"><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><b>else</b><span class="s11"> {</span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>printFree();</p>
+<p class="p17"><span class="s11"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><b>return</b><span class="s11"> ;</span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
+<p class="p3">If the user is not lucky enough to get free purchase then we print out the normal amount using printTotal.<span class="Apple-converted-space">  </span>Otherwise we call the special printFree method and effectively end the current method’s execution with <span class="s23"><b>return</b> ;</span>.<span class="Apple-converted-space">  </span>Even though the return type is void, we can end any method with empty return statement. <span class="Apple-converted-space"> </span></p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s7"><b>if</b></span> (redo == 1)</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>run();</p>
+<p class="p3">Finally we ask the user if they want to redo the whole order and if the answer is yes, we can just recursively call run() in the if statement.<span class="Apple-converted-space">  </span>So this way the ordering process keeps going until the user is done or the purchase is free.</p>
+<p class="p22"><br></p>
+<p class="p24"><b>(Exercise) Fill-in – Shop.java &amp; Cheese.java</b></p>
+<p class="p3">Everywhere you see comment to “Fill in Code” is where you need to add code to make this program behave correctly.<span class="Apple-converted-space">  </span>If it says “Fix Code” you need to change existing code.<span class="Apple-converted-space">  </span>In most places a sample is provided to help you get started.<span class="Apple-converted-space">  </span>The program currently runs but the values are obviously incorrect.</p>
+<p class="p4"><br></p>
+<p class="p3">Main is inside runShop.java and there is where you should run the whole program.</p>
+<p class="p4"><br></p>
+<p class="p24"><b>(Assessment) Level of Understanding</b></p>
+<ol class="ol1">
+  <ul class="ul1">
+    <li class="li3">1.<span class="Apple-tab-span">	</span>What does <span class="s24"><b>this</b></span><span class="s23"> </span>refers to?</li>
+    <li class="li3">2.<span class="Apple-tab-span">	</span>What should be the value of numCheese when the RunShop terminates (ie the println output)?</li>
+    <li class="li25"><span class="s25">3.<span class="Apple-tab-span">	</span>Give code to implement<span class="Apple-converted-space">  </span></span><span class="s7"><b>public</b></span> <span class="s7"><b>void</b></span> setName(String name) { … }</li>
+  </ul>
+</ol>
+
+<p class="p26"><br></p>
+</body>
+</html>
